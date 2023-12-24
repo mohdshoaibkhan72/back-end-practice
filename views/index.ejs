@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <style>* {
+        padding: 0;
+        margin: 0;
+        font-style: Averta CY W10;
+    }
+    
+    
+    
+    #nav {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        margin-top: -30px;
+        background-color: #f1f3f4;
+    
+    
+    }
+    
+    .img-log img {
+        padding-top: 2vw;
+        padding-left: 1vw;
+        position: sticky;
+    }
+    
+    #nav .name {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2.5vw;
+        align-items: center;
+        font-size: 1.3vw;
+    }
+    
+    
+    #nav .name h4 {
+        margin-top: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3vw;
+    }
+    
+    #nav .name h4:hover {
+        color: #ff6f61;
+        transition: 0.5;
+    }
+    
+    #nav #img {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vh;
+        margin-top: 3vh;
+        font-size: 1.5vw;
+    }
+    
+    #nav i:hover {
+        color: #ff6f61;
+        transition: 0.5;
+    }
+    
+    #nav #img input {
+        height: 4vh;
+        border-style: none;
+        border-bottom: 2px solid #ff6f61;
+        font-weight: 400;
+        color: #212121;
+    }
+    
+    .ri-search-line {
+    
+        height: 100px;
+        width: 5vh;
+        position: absolute;
+        margin-left: -20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3px;
+    }
+    
+    #portated {
+        display: none;
+    }
+    
+    @media (max-width:600px) {
+        #nav .name {
+            display: none;
+        }
+    
+        #img>i {
+            display: none;
+        }
+    
+        #img .img {
+            display: none;
+        }
+    
+        #portated {
+            display: block;
+            padding-top: 15px;
+        }
+    
+        #portated i {
+            font: 600;
+            font-size: 5vw;
+            position: relative;
+        }
+    
+        .img-log img {
+            padding-top: 8vw;
+            padding-left: 0.5vw;
+            width: 60%;
+        }
+    
+        #nav #img input {
+            height: 4vh
+        }
+    
+    }
+    
+    /* this is a hero section */
+    
+    #hero {
+        margin-top: 40px;
+        padding-top: 20px;
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        background-image: url(./images/hero-banner.png);
+    
+    }
+    
+    #hero-left {
+        width: 40%;
+        padding: 8vw 13vw;
+    }
+    
+    #hero-left h1 {
+        font-size: 4vw;
+        font-weight: 50;
+    }
+    
+    #hero-left h2 {
+        margin-top: 3vh;
+        font-size: 4.5vw;
+        font-weight: 1000;
+    }
+    
+    #hero-left p {
+        font-size: 1.5vw;
+        font-weight: 100;
+    }
+    
+    #hero-left button {
+        width: 8vw;
+        height: 3vw;
+        font-size: 1.3vw;
+        border-style: none;
+        margin: 4vw 1vw;
+        background-color: #ff6f61;
+        color: white;
+    
+    }
+    
+    @media (max-width:600px) {
+        #hero {
+            height: min-content;
+            background-image: url(./images/hero-banner.png);
+            background-size: 100%;
+    
+        }
+    
+        #hero-left {
+            width: 80%;
+            padding: 5vw 10vw;
+        }
+    
+        #hero-left h1 {
+            font-size: 5vw;
+            font-weight: 100;
+        }
+    
+        #hero-left h2 {
+            margin-top: 2vh;
+            font-size: 3vh;
+            font-weight: 1000;
+        }
+    
+        #hero-left p {
+            font-size: 1.5vw;
+            font-weight: 100;
+        }
+    
+        #hero-left button {
+            width: 12vw;
+            height: 3.5vw;
+            font-size: 2vw;
+            border-style: none;
+            margin: 4vw 1vw;
+            background-color: #ff6f61;
+            color: white;
+    
+        }
+    }
+    
+    /* Shoes collection  */
+    
+    #shoes-collection {
+        padding-top: 10px;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #men {
+        height: 45vh;
+        width: 30%;
+        background-image: url(./images/collection-1.jpg);
+    
+    }
+    
+    #women {
+        height: 45vh;
+        width: 30%;
+        background-image: url(./images/collection-2.jpg);
+        border-radius: 10px;
+    }
+    
+    #sport {
+        height: 45vh;
+        width: 30%;
+        background-image: url(./images/collection-3.jpg);
+        border-radius: 10px;
+    }
+    
+    #shoes-collection .btn1 {
+        height: 5vh;
+        width: 6.5vw;
+        background-color: #b3e140;
+        border: 1px solid black;
+        font-weight: 500;
+        position: relative;
+        margin-top: 210px;
+        font-size: 15px;
+        border-radius: 3px;
+        margin-left: 170px;
+    }
+    
+    #shoes-collection .btn2 {
+        height: 5vh;
+        width: 6.5vw;
+        border-radius: 3px;
+        background-color: #eebdea;
+        border: 1px solid black;
+        font-weight: 500;
+        position: relative;
+        margin-top: 210px;
+        font-size: 15px;
+        margin-left: 170px;
+    }
+    
+    #shoes-collection .btn3 {
+        height: 5vh;
+        width: 6.5vw;
+        border-radius: 3px;
+        background-color: #e7cfcf;
+        border: 1px solid black;
+        font-weight: 500;
+        position: relative;
+        margin-top: 210px;
+        font-size: 15px;
+        margin-left: 170px;
+    }
+    
+    #shoes-collection h1 {
+        display: flex;
+        padding-top: 4vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    @media (max-width:600px) {
+        #shoes-collection {
+            padding: 2px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        #shoes-collection button {
+            display: none;
+        }
+    
+        #men {
+            width: 100%;
+            padding-bottom: 25px;
+            background-image: url(./images/collection-1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-block: 45px 25px;
+        }
+    
+        #women {
+            width: 100%;
+            background-image: url(./images/collection-2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-block: 45px 25px;
+        }
+    
+        #sport {
+            width: 100%;
+            background-image: url(./images/collection-3.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-block: 45px 25px;
+        }
+    
+        #shoes-collection h1 {
+            font-size: 2.5vh;
+            position: absolute;
+            margin-top: 67px;
+            padding-left: 100px;
+    
+    
+        }
+    }
+    
+    /* best seller bar*/
+    #best-seller {
+        height: 200px;
+        width: 100%;
+    
+    }
+    
+    #seller h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    
+    #seller #btn {
+        border-radius: 10px;
+        display: flex;
+        background-color: white;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    #btn button {
+        width: 12vh;
+        height: 4vh;
+        border: 1px solid lightblue;
+        border-radius: 4px;
+        font-size: 15px;
+        background-color: white;
+    }
+    
+    #btn button:hover {
+        background-color: #ff6f61;
+        color: white;
+        transition: 0.5s;
+    }
+    
+    #btn .btn1 {
+        background-color: #ff6f61;
+        color: white;
+    }
+    
+    @media (max-width:600px) {
+    
+        #seller h1 {
+            font-size: 2.5vh;
+            position: absolute;
+            padding-left: 80px;
+            margin-top: 15px;
+        }
+    
+        #seller #btn {
+            border-radius: 10px;
+            background-color: white;
+            margin-top: 0px;
+            padding-top: 50px;
+            gap: 8px;
+    
+    
+        }
+    
+        #btn button {
+            width: 12vh;
+            height: 4vh;
+            border: 1px solid lightblue;
+            border-radius: 4px;
+            font-size: 10px;
+            background-color: white;
+        }
+    }
+    
+    /* best seller product img*/
+    #seller-product {
+        padding-top: 15px;
+        height: 350px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    #prodct1 {
+        width: 22%;
+        background-image: url(./images/product-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    
+    #prodct2 {
+        width: 22%;
+        background-image: url(./images/product-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    #prodct3 {
+        width: 22%;
+        background-image: url(./images/product-3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    #prodct4 {
+        width: 22%;
+        background-image: url(./images/product-4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    
+    #seller-product #prodct1 i {
+        font-size: 4vh;
+        position: absolute;
+        margin-top: 5vw;
+        margin-left: 18vw;
+        opacity: 0.7;
+    }
+    
+    #seller-product #prodct2 i {
+        font-size: 4vh;
+        position: absolute;
+        margin-top: 5vw;
+        margin-left: 18vw;
+        opacity: 0.7;
+    }
+    
+    #seller-product #prodct3 i {
+        font-size: 4vh;
+        position: absolute;
+        margin-top: 5vw;
+        margin-left: 18vw;
+        opacity: 0.7;
+    }
+    
+    #seller-product #prodct4 i {
+        font-size: 4vh;
+        position: absolute;
+        margin-top: 5vw;
+        margin-left: 18vw;
+        opacity: 0.7;
+    }
+    
+    #seller-product #prodct1 i:hover {
+        color: #ff6f61;
+        transition: 0.5;
+        opacity: 1;
+    
+    }
+    
+    #seller-product #prodct2 i:hover {
+        color: #ff6f61;
+        transition: 0.5;
+        opacity: 1;
+    
+    }
+    
+    #seller-product #prodct3 i:hover {
+        color: #ff6f61;
+        transition: 0.5;
+        opacity: 1;
+    
+    }
+    
+    #seller-product #prodct4 i:hover {
+        color: #ff6f61;
+        transition: 0.5;
+        opacity: 1;
+    
+    }
+    
+    @media (max-width:600px) {
+        #seller-product i {
+            position: absolute;
+            padding-left: 30vh;
+        }
+    
+        #seller-product {
+            margin: 10px 10px;
+            height: 1000px;
+            display: flex;
+            justify-items: flex-start;
+            flex-direction: column;
+            width: 300px;
+            gap: 50px;
+        }
+    
+        #prodct1 {
+            display: block;
+            width: 300px;
+            height: 500px;
+            background-image: url(./images/product-1.jpg);
+        }
+    
+        #prodct2 {
+            display: block;
+            width: 300px;
+            height: 500px;
+            background-image: url(./images/product-2.jpg);
+        }
+    
+        #prodct3 {
+            display: block;
+            width: 300px;
+            height: 500px;
+            background-image: url(./images/product-3.jpg);
+        }
+    
+        #prodct4 {
+            display: block;
+            width: 300px;
+            height: 500px;
+            background-image: url(./images/product-4.jpg);
+        }
+    }
+    
+    /*getails of product */
+    .details {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    
+    .details h3 {
+        margin-top: 5px;
+        margin-left: -30px;
+    }
+    
+    .details h3:hover {
+        color: #ff6f61;
+    }
+    
+    .details h5 {
+        color: #ff6f61;
+        margin-top: 2px;
+        margin-left: 10px;
+    }
+    
+    @media (max-width:600px) {
+        .details {
+            display: flex;
+            flex-direction: column;
+            margin-left: 130px;
+            position: relative;
+            margin-top: -790px;
+            gap: 200px;
+    
+    
+        }
+    
+        .details .det1 {
+            margin-top: -5px;
+            font-size: 10px;
+        }
+    
+        .details .det2 {
+            margin-top: 25px;
+            font-size: 10px;
+        }
+    
+        .details .det3 {
+            margin-top: 20px;
+            font-size: 10px;
+        }
+    
+        .details .det4 {
+            margin-top: 20px;
+            font-size: 10px;
+        }
+    
+        .details h5 {
+            margin-top: 2px;
+            margin-left: 10px;
+            color: #ff6f61;
+        }
+    }
+    
+    /*services*/
+    #ser {
+    
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    
+    #services .img {
+        margin-left: 25px;
+        border: 4px solid #ff6f61;
+        width: 62px;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 60px;
+    }
+    
+    #ser-cont h3 {
+        margin: 10px;
+    }
+    
+    #ser-cont h5 {
+        opacity: 0.7;
+        margin-left: 15px;
+    }
+    
+    @media (max-width:600px) {
+        #ser {
+            margin-left: 100px;
+            justify-content: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: fit-content;
+            gap: 20px;
+        }
+    
+        #services .img {
+            border: 2px solid #ff6f61;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 50px;
+        }
+    
+        #ser-cont h3 {
+            margin-left: -5px;
+        }
+    
+        #ser-cont h5 {
+            opacity: 0.7;
+            margin-left: -5px;
+        }
+    
+    }
+    
+    /*foter*/
+    #foter {
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+        background-color: #212121;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (max-width:600px) {
+    #foter p{
+        font-size: 10px;
+        border-radius: 10px;
+    }
+    }</style>
+</head>
+
+<body>
+    <!--Nav bar  -->
+    <section>>
+        <div id="nav">
+            <div class="img-log">
+                <img src="./images/logo.svg">
+            </div>
+            <div class="name">
+                <h4>Home</h4>
+                <h4>About</h4>
+                <h4>product</h4>
+                <h4>shop</h4>
+                <h4>blog</h4>
+                <h4>contact</h4>
+            </div>
+            <div id="img">
+                <div>
+                    <input type="text" placeholder="serch product">
+                    <i class="ri-search-line img"></i>
+
+                </div>
+                <i class="ri-user-line"></i>
+                <i class="ri-heart-line"></i>
+                <i class="ri-shopping-bag-line"></i>
+            </div>
+            <div id="portated">
+                <i class="ri-search-line"></i>
+                &nbsp&nbsp&nbsp
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--hero section -->
+    <div id="hero">
+        <div id="hero-left">
+            <h1>New Summer</h1>
+            <h2>Shoes Collection</h2>
+            <p>Competently expedite alternative benefits whereas<br> leading-edge catalysts for change. Globally
+                leverage existing an expanded array<br> of leadership.</p>
+            <button>Shop know</button>
+        </div>
+        <div id="hero-right"></div>
+    </div>
+    <!-- shoes collection  -->
+    <div id="shoes-collection">
+        <div id="men">
+            <h1>Mens Collection</h1>
+            <button class="btn1">
+                <h4>Explore all</h4>
+            </button>
+        </div>
+        <div id="women">
+            <h1>Women Collection</h1>
+            <button class="btn2">
+                <h4>Explore all</h4>
+            </button>
+        </div>
+        <div id="sport">
+            <h1>Sport Collection</h1>
+            <button class="btn3">
+                <h4>Explore all</h4>
+            </button>
+        </div>
+    </div>
+    <!-- Best seller product   -->
+    <div id="best-seller">
+        <div id="seller">
+            <h1>Bestsellers Products</h1>
+            <div id="btn">
+                <button class="btn1">All</button>
+                <button>Nike</button>
+                <button>Adidas</button>
+                <button>puma</button>
+                <button>Bata</button>
+                <button>Apex</button>
+            </div>
+        </div>
+        <div id="seller-product">
+            <div id="prodct1"><i class="ri-shopping-cart-fill"></i></div>
+            <div id="prodct2"><i class="ri-shopping-cart-fill"></i></div>
+            <div id="prodct3"><i class="ri-shopping-cart-fill"></i></div>
+            <div id="prodct4"><i class="ri-shopping-cart-fill"></i></div>
+        </div>
+        <!-- Best seller details   -->
+        <div class="details">
+            <div class="det1">
+                <p>Men/Women</p>
+                <h3>Running Sneaker Shoes</h3>
+                <h5>$110.87</h5>
+            </div>
+            <div class="det2">
+                <p> Men/Women</p>
+                <h3>Leather Mens Slipper</h3>
+                <h5>$110.87</h5>
+            </div>
+            <div class="det3">
+                <p>Men/Women</p>
+                <h3>Simple Fabric Shoe</h3>
+                <h5>$110.87</h5>
+            </div>
+            <div class="det4">
+                <p>Men/Women</p>
+                <h3>Air Jordan 7 Retro</h3>
+                <h5>$110.87</h5>
+            </div>
+        </div>
+        <!-- Services   -->
+        <div id="ser">
+            <div id="services">
+                <div class="img"><img src="./images/service-1.png">
+                </div>
+                <div id="ser-cont">
+                    <h3>FREE SHIPING</h3>
+                    <h5>All orders over $150</h5>
+                </div>
+            </div>
+            <div id="services">
+                <div class="img"> <img src="./images/service-2.png">
+                </div>
+                <div id="ser-cont">
+                    <h3>QUICK PAYMENT </h3>
+                    <h5>100% secure payment</h5>
+                </div>
+            </div>
+            <div id="services">
+                <div class="img"> <img src="./images/service-3.png">
+                </div>
+                <div id="ser-cont">
+                    <h3>FREE RETURNS </h3>
+                    <h5>Money back in 30 days</h5>
+                </div>
+            </div>
+            <div id="services">
+                <div class="img"> <img src="./images/service-4.png">
+                </div>
+                <div id="ser-cont">
+                    <h3>24/7 SUPPORT </h3>
+                    <h5>Get Quick Support</h5>
+                </div>
+            </div>
+
+        </div>
+        <div id="foter">
+            <p>© 2022 codewithsadee. All Rights Reserved</p>
+        </div>
+</body>
+
+</html>
